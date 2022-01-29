@@ -1,0 +1,52 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.columnfull {
+  display: flex;
+}
+
+.column-quarter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-button {
+  display: flex;
+}
+
+.title {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title-paragraph {
+  font-family: Karla, sans-serif;
+  text-align: center;
+}
+
+.subheading {
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.paragraph {
+  font-family: Karla, sans-serif;
+  text-align: left;
+}
+
+.button-style {
+  background: #fff;
+  border: 2px solid;
+  border-color: #d14c45;
+  padding: 10px 35px;
+  font-family: Karla, sans-serif;
+  color: #d14c45;
+}
