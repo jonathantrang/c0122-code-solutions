@@ -1,19 +1,18 @@
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .row {
   display: flex;
-}
-
-.row-center {
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .column-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -23,15 +22,28 @@ h1 {
 
 .column-one-third {
   width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .bg-blue {
   background-color: #1996da;
 }
 
+.header-font {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  color: white;
+}
+
 .heading-font {
   font-family: Lato, sans-serif;
   font-weight: 400;
+  font-size: 24px;
   color: white;
 }
 
@@ -43,24 +55,24 @@ h1 {
 }
 
 .circle {
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
 }
 
 .circle-border {
   background: #ebf6fb;
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
 }
 
 .image-resize {
-  width: 50%;
-  height: 50%;
-  padding: 5px;
+  object-fit: contain;
+  width: 100%;
+  padding: 30px;
+  height: 100%;
 }
 
 .text-center {
   text-align: center;
 }
-
-/* need to center circle and image */
