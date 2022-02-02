@@ -7,13 +7,20 @@
   display: flex;
 }
 
-.columnfull {
-  display: flex;
+.column-full {
+  width: 100%;
+}
+
+.column-half {
+  width: 100%;
 }
 
 .column-quarter {
-  display: flex;
-  flex-wrap: wrap;
+  width: 25%;
+}
+
+.column-three-fourths {
+  width: 75%;
 }
 
 .column-button {
@@ -21,14 +28,18 @@
 }
 
 .title {
+  display: flex;
+  justify-content: center;
   font-family: Karla, sans-serif;
+  font-size: 48px;
   font-weight: 700;
-  text-align: center;
+  margin: 60px 0 20px;
 }
 
 .title-paragraph {
   font-family: Karla, sans-serif;
   text-align: center;
+  margin: 0 100px;
 }
 
 .subheading {
@@ -40,6 +51,15 @@
 .paragraph {
   font-family: Karla, sans-serif;
   text-align: left;
+}
+
+.image-resize {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .button-style {
