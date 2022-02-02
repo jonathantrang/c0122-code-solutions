@@ -5,6 +5,8 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
 }
 
 .column-full {
@@ -12,7 +14,7 @@
 }
 
 .column-half {
-  width: 100%;
+  width: 50%;
 }
 
 .column-quarter {
@@ -21,10 +23,6 @@
 
 .column-three-fourths {
   width: 75%;
-}
-
-.column-button {
-  display: flex;
 }
 
 .title {
@@ -39,27 +37,33 @@
 .title-paragraph {
   font-family: Karla, sans-serif;
   text-align: center;
-  margin: 0 100px;
+  margin: 20px 100px 50px;
+  color: #595959;
 }
 
 .subheading {
   font-family: Karla, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-align: left;
 }
 
 .paragraph {
   font-family: Karla, sans-serif;
   text-align: left;
+  line-height: 25px;
+  color: #595959;
 }
 
 .image-resize {
   display: flex;
-  width: 50px;
-  height: 50px;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
+  width: 25%;
+  height: 25%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
 }
 
 .button-style {
@@ -68,5 +72,7 @@
   border-color: #d14c45;
   padding: 10px 35px;
   font-family: Karla, sans-serif;
+  font-weight: 700;
   color: #d14c45;
+  text-align: center;
 }
