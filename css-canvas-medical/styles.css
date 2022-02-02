@@ -1,0 +1,23 @@
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-50 {
+  width: 50%;
+}
+
+.column-20 {
+  width: 20%;
+}
+
+/* Information on the header row */
+.blue-logo {
+  display: flex;
+  margin: 30px;
+}
