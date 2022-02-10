@@ -1,23 +1,234 @@
 .container {
-  max-width: 90%;
+  max-width: 2000px;
   margin: auto;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.column-50 {
-  width: 50%;
+/* Rulesets on the header row */
+.border-bottom {
+  border-bottom: 1px solid #E7E9EC;
+  width: 100%;
 }
-
-.column-20 {
-  width: 20%;
-}
-
-/* Information on the header row */
 .blue-logo {
   display: flex;
-  margin: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.header-column-40 {
+  width: 40%;
+  margin: 40px 100px;
+}
+
+.header-column-60 {
+  width: 60%;
+  margin: 10px 100px;
+}
+
+.header-column-20 {
+  display: flex;
+  width: 20%;
+  margin: 30px 0;
+  justify-content: space-evenly;
+}
+
+.nav-bar-button {
+  background-color: white;
+  border: none;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  color: #A1A1A1;
+}
+
+.contact-us-button {
+  background-color: #294464;
+  border: none;
+  font-family: "Avenir", sans-serif;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* Rulesets for the hero image row */
+.hero-container {
+  position: relative;
+}
+
+.hero-image-column {
+  width: 90%;
+  margin: 75px 100px 150px;
+  padding: 100px;
+  position: relative;
+}
+
+.hero-image-column::before {
+  filter: brightness(90%);
+  min-height: 1000px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-white-header {
+  font-family: "Tiempos Headline", serif;
+  font-weight: 500;
+  font-size: 58px;
+  color: white;
+  max-width: 50%;
+}
+
+.hero-white-text {
+  font-family: "Avenir", sans-serif;
+  font-size: 22px;
+  color: white;
+  max-width: 50%;
+  line-height: 2em;
+}
+
+.hero-button {
+  margin: 50px 0 0;
+}
+
+/* Rulesets for the clinicians row */
+.bg-light-grey {
+  background-color: #FAFAFA;
+}
+
+.clinic-column {
+  width: 100%;
+  margin: 20px 100px;
+}
+
+.clinic-header-column {
+  width: 100%;
+}
+
+.clinic-location-column {
+  width: 50%;
+  padding: 100px;
+}
+
+.gray-subheader {
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #6E6E6E;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-squeeze {
+  max-width: 50%
+}
+
+/* Rulesets for the learn more row */
+.learn-more-column {
+  width: 50%;
+  margin: 30px 150px;
+}
+
+.get-started-column {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 50%;
+  margin: 30px 150px;
+}
+
+.gray-header {
+  font-family: "Tiempos Headline", serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #6E6E6E;
+}
+
+.gray-text {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #6E6E6E;
+}
+
+.start-button {
+  border: none;
+  font-family: Avenir, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background-color: #294464;
+  border-radius: 5px;
+  padding: 15px 50px;
+}
+
+/* Rulesets for the about us row */
+.bg-grey {
+  background-color: #525351;
+}
+
+.about-us-column-50 {
+  width: 50%;
+  margin: 150px 150px;
+}
+
+.about-us-column-25 {
+  width: 25%;
+  margin: 130px 150px;
+}
+
+.white-logo {
+  width: 150px;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.white-about-us-text {
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 39%;
+  line-height: 28px;
+}
+
+.white-about-us-subheader {
+  font-family: Avenir, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Rulesets on the legal row */
+.legal-row {
+  display: flex;
+}
+
+.legal-column {
+  display: flex;
+  width: 20%;
+  margin: 50px 150px;
+}
+
+.legal-subheader {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: #6E6E6E;
+  margin: 10px;
 }
