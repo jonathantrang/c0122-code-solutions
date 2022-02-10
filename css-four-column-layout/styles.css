@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  margin: 0 500px;
+}
+
+.header-column {
+  width: 100%;
+}
+
+.column-25 {
+  width: 25%;
+}
+
+.screen-resize {
+  max-width: 250px;
+}
+
+.icon-resize {
+  max-width: 75px;
+}
+
+.center {
+  text-align: center;
+}
+
+.screen-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.subheader {
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text {
+  font-family: Barlow, sans-serif;
+  font-size: 14px;
+}
