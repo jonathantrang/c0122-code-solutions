@@ -34,10 +34,8 @@
 
 function tail(array) {
   var lastValues = [];
-  for (var i = 0; i < array.length; i++) {
-    if (i === 0) {
-      continue;
-    } else lastValues.push(array[i]);
+  for (var i = 1; i < array.length; i++) {
+    lastValues.push(array[i]);
   }
   return lastValues;
 }
