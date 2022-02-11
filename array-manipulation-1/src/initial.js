@@ -34,11 +34,8 @@
 
 function initial(array) {
   var initialValues = [];
-  for (var i = 0; i < array.length; i++) {
-    if (i < (array.length - 1)) {
-      initialValues.push(array[i]);
-    } else continue; {
-    }
+  for (var i = 0; i < array.length - 1; i++) {
+    initialValues.push(array[i]);
   }
   return initialValues;
 }
