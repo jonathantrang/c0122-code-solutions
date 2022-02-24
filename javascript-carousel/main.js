@@ -29,7 +29,7 @@ function cheveronChange(event) {
 
   if (cheveronCheck === $cheveronList[0]) {
     for (var i = $carouselList.length - 1; i >= 0; i--) {
-      var carouselView.-[i]
+      var carouselView.-[i] ss
       if (carouselView[i] === currentCarousel) {
         $carouselList[i].className = 'carousel fas fa-circle';
       } else $carouselList[i].className = 'carousel far fa-circle';
