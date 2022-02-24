@@ -1,0 +1,18 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.column {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
