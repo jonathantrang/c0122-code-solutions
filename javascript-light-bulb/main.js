@@ -13,4 +13,4 @@ function changeColor(event) {
   }
 }
 
-$circle.addEventListener('click', changeColor)
+$circle.addEventListener('click', changeColor);

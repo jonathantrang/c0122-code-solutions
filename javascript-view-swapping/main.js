@@ -11,7 +11,7 @@ function tabSwitch(event) {
         $tabList[i].className = 'tab active';
       } else $tabList[i].className = 'tab';
     }
-    for (var i = 0; i < $viewList.length; i++) {
+    for (i = 0; i < $viewList.length; i++) {
       if ($viewList[i].getAttribute('data-view') === dataView) {
         $viewList[i].className = 'view';
       } else $viewList[i].className = 'view hidden';
