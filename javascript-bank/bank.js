@@ -1,13 +1,11 @@
 /* exported Bank */
 Bank.prototype.openAccount = function (holder, balance) {
-  if (balance < 0) {
-    return null;
-  } else if (balance > 0) {
+  if (balance > 0 && Number.isInteger(balance)) {
     var account = new Account(this.nextAccountNumber, holder);
     this.accounts.push(account);
     this.nextAccountNumber++;
     return this.nextAccountNumber - 1;
-  }
+  } else return null;
 };
 Bank.prototype.getAccount = function (number) {
   for (var i = 0; i < this.accounts.length; i++) {
