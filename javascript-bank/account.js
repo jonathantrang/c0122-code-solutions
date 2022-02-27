@@ -33,3 +33,13 @@ function Account(number, holder) {
   var transactions = [];
   this.transactions = transactions;
 }
+
+Account.prototype.getAccountNumber = function () {
+  var accountNumber = this.number;
+  return accountNumber;
+};
+
+Account.prototype.getAccountHolder = function () {
+  var accountHolder = this.holder;
+  return accountHolder;
+};
