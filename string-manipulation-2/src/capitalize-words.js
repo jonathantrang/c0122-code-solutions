@@ -9,7 +9,7 @@
     How to get the first letter of first word capitalized?
       Uppercase the first index of the string
     How to get first letter capitalized if there's more than one word?
-      Use the split method
+      Use the split method turns string into an array with a set of strings
 
   3. Pseudocode
     Create a function that uses one parameter called string
@@ -25,15 +25,13 @@
 */
 
 function capitalizeWords(string) {
-  var lowerCaseWords = string.toLowerCase();
-  var listOfWords = lowerCaseWords.split(' ');
-  var words = '';
+  var listOfWords = string.split(' ');
+  var words = [];
   for (var i = 0; i < listOfWords.length; i++) {
-    var word = listOfWords[i];
-    var firstLetter = word[0].toUpperCase();
-    var otherLetters = word.slice(1, word.length);
-    word = firstLetter + otherLetters + ' ';
-    words += word;
+    var firstLetter = listOfWords[i][0].toUpperCase();
+    var otherLetters = listOfWords[i].slice(1, listOfWords[i].length).toLowerCase();
+    word = firstLetter + otherLetters;
+    words.push(word);
   }
-  return words;
+  return words.join(' ');
 }
