@@ -30,7 +30,7 @@ function capitalizeWords(string) {
   for (var i = 0; i < listOfWords.length; i++) {
     var firstLetter = listOfWords[i][0].toUpperCase();
     var otherLetters = listOfWords[i].slice(1, listOfWords[i].length).toLowerCase();
-    word = firstLetter + otherLetters;
+    var word = firstLetter + otherLetters;
     words.push(word);
   }
   return words.join(' ');
