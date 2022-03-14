@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body class="container">
+  <div class="row">
+    <div class="column">
+      <div class="images center">
+        <span class="fas fa-chevron-left cheveron"></span>
+        <img class="pokemon" data-view="bulbasaur" src="images/001.png">
+        <img class="pokemon hidden" data-view="charmander" src="images/004.png">
+        <img class="pokemon hidden" data-view="squirtle" src="images/007.png">
+        <img class="pokemon hidden" data-view="pikachu" src="images/025.png">
+        <img class="pokemon hidden" data-view="jigglypuff" src="images/039.png">
+        <span class="fas fa-chevron-right cheveron"></span>
+      </div>
+    </div>
+    <div class="column">
+      <div class="carousel-view center">
+        <span class="carousel fas fa-circle" data-view="bulbasaur" ></span>
+        <span class="carousel far fa-circle" data-view="charmander" ></span>
+        <span class="carousel far fa-circle" data-view="squirtle" ></span>
+        <span class="carousel far fa-circle" data-view="pikachu" ></span>
+        <span class="carousel far fa-circle" data-view="jigglypuff" ></span>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

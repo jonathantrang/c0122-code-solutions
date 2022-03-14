@@ -1,0 +1,17 @@
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.images > span {
+  font-size: 42px;
+}
+
+.carousel-view > span {
+  padding: 0.25rem;
+}
