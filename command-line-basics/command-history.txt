@@ -1,0 +1,118 @@
+    1  exit
+    2  whoami
+    3  dev
+    4  git config --global user.name "Jonathan Trang"
+    5  git config --global user.email "jttrang96@gmail.com"
+    6  git config --global --list
+    7  exit
+    8  cd command-line-basics
+    9  cd ~/repos/c0122-code-solutions
+   10  git switch command-line-basics
+   11  cd command-line-basics
+   12  pwd
+   13  man man
+   14  cat laziness.txt
+   15  cat impatience.txt
+   16  hubris.txt
+   17  cat hubris.txt
+   18  man cat
+   19  cat
+   20  cat laziness.txt impatience.txt hubris.txt
+   21  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   22  cat three-virtues.txt
+   23  git clear
+   24  clear
+   25  man ls
+   26  ls
+   27  ls -a
+   28  ls -F
+   29  ls lfz-staff/
+   30  ls lfz-staff/ -a
+   31  ls lfz-staff/ -F
+   32  ls -aF lfz-staff > lfz-staff/contents.txt
+   33  cat lfz-staff/contents.txt
+   34  man pwd
+   35  pwd
+   36  pwd > i-was-here.txt
+   37  ls 
+   38  cat i-was-here.txt
+   39  man echo
+   40  echo 'Hello, World!'
+   41  echo 'Hello, World!' > hello.txt
+   42  ls
+   43  cat hello.txt
+   44  man touch
+   45  touch tag-youre-it.txt
+   46  man touch
+   47  touch tag-youre-it.txt > boop.txt
+   48  touch tag-youre-it.txt > snoot/
+   49  touch snoot/ > tag-youre-it.txt
+   50  ls
+   51  ls snoot/
+   52  git status
+   53  /snoot touch boop.txt
+   54  snoot/ touch boop.txt
+   55  /snoot
+   56  snoot/
+   57  man touch
+   58  snoot/ touch boop.txt
+   59  /snoot touch boop.txt
+   60  ls
+   61  snoot / touch boop.txt
+   62  touch snoot boop.txt
+   63  ls snoot/
+   64  ls snoot
+   65  ls
+   66  git status
+   67  git restore boop.txt
+   68  rm boop.txt
+   69  git status
+   70  touch ../snoot/boop.txt
+   71  touch /snoot/boop.txt
+   72  touch snoot/boop.txt
+   73  ls snoot/
+   74  man mkdir
+   75  man touch
+   76  man mkdir
+   77  mkdir -p parent
+   78  ls
+   79  git status
+   80  mkdir -p parent/child/grandchild
+   81  ls
+   82  touch parent/child/grandchild/.gitkeep
+   83  ls -a
+   84  git status
+   85  ls -a
+   86  man ls
+   87  ls parent/child/grandchild
+   88  ls parent/child/grandchild/
+   89  ls grandchild/
+   90  mkdir parent
+   91  git status
+   92  rm parent/
+   93  rm -r parent/
+   94  git status
+   95  mkdir parent
+   96  ls
+   97  mkdir -p parent/child/grandchild
+   98  touch paren/child/grandchild/.gitkeep
+   99  touch parent/child/grandchild/.gitkeep
+  100  ls -a
+  101  ls -a parent/
+  102  ls -a parent/child/grandchild
+  103  man mv
+  104  mv pokiemans pokemon
+  105  ls
+  106  man rm
+  107  rm lol.txt
+  108  ls
+  109  rm -r kill-me/
+  110  ls
+  111  man cp
+  112  cp and-then.txt
+  113  cp and-then.txt no-and-then.txt
+  114  ls
+  115  cat and-then.txt no-and-then.txt
+  116  man history
+  117  history
+  118  history > command-history.txt
