@@ -1,0 +1,14 @@
+console.log('typeof for exports:', typeof exports);
+console.log('Value of exports:', exports);
+console.log('');
+console.log('typeof for require:', typeof require);
+console.log('Value of require:', require);
+console.log('');
+console.log('typeof for module:', typeof module);
+console.log('Value of module:', module);
+console.log('');
+console.log('typeof for __filename:', typeof __filename);
+console.log('Value of __filename:', __filename);
+console.log('');
+console.log('typeof for __dirname:', typeof __dirname);
+console.log('Value of __dirname:', __dirname);
