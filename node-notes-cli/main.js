@@ -7,11 +7,14 @@ if (action === 'read') {
     console.log(`${key}: ${jsonData.notes[key]}`);
   }
 } else if (action === 'create') {
-  console.log('Create');
+  jsonData.notes[`${jsonData.nextId++}`] = process.argv[3];
+  renderJSON();
 } else if (action === 'update') {
-  console.log('Edit');
+  jsonData.notes[process.argv[3]] = process.argv[4];
+  renderJSON();
 } else if (action === 'delete') {
-  console.log('Delete');
+  delete jsonData.notes[process.argv[3]];
+  renderJSON();
 } else console.log('Please enter proper command.');
 
 function renderJSON() {
