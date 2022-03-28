@@ -1,5 +1,4 @@
 class ExampleClass {
-
 }
 
 const example = new ExampleClass();
