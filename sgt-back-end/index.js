@@ -40,7 +40,7 @@ app.post('/api/grades', (req, res) => {
   const score = Number(req.body.score);
   const text = 'INSERT INTO grades(name, course, score) VALUES ($1, $2, $3) RETURNING *';
   const values = [req.body.name, req.body.course, req.body.score];
-  if (!values) {
+  if (values.includes(undefined)) {
     res.status(400).json({
       error: 'Invalid grade, please put in a proper name, course, and score.'
     });
@@ -69,7 +69,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
   const id = Number(req.params.gradeId);
   const text = 'UPDATE "grades" SET "name" = $1, "course" = $2, "score" = $3 WHERE "gradeId" = $4 RETURNING *';
   const values = [req.body.name, req.body.course, req.body.score, id];
-  if (!values) {
+  if (values.includes(undefined)) {
     res.status(400).json({
       error: 'Invalid grade, please put in a proper name, course, and score.'
     });
@@ -79,7 +79,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
       error: 'Score must be a positive integer between 0 and 100.'
     });
     return;
-  } else if (!id) {
+  } else if (!Number.isInteger(id) || id <= 0) {
     res.status(400).json({
       error: 'gradeId must be a positive integer'
     });
@@ -108,7 +108,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
   const id = Number(req.params.gradeId);
   const text = 'DELETE FROM "grades" WHERE "gradeId" = $1 RETURNING *';
   const values = [id];
-  if (!id) {
+  if (!Number.isInteger(id) || id <= 0) {
     res.status(400).json({
       error: 'gradeId must be a positive integer'
     });
