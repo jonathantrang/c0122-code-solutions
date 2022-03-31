@@ -1,0 +1,35 @@
+button {
+  padding: .5rem 1rem;
+  border: solid .2rem;
+  font-size: 2rem;
+}
+
+.warmButton {
+  background-color: #351B75;
+  color: #FFF;
+}
+
+.heatingButton {
+  background-color: #674EA7;
+  color: #FFF;
+}
+
+.fireButton {
+  background-color: #E06666;
+  color: #FFF;
+}
+
+.nuclearButton {
+  background-color: #F6B26B;
+  color: #000;
+}
+
+.meltdownButton {
+  background-color: #FDFF00;
+  color: #000;
+}
+
+.falloutButton {
+  background-color: #FFFFFF;
+  color: #000;
+}
