@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
 
 class HotButton extends React.Component {
   constructor(props) {
@@ -14,18 +13,18 @@ class HotButton extends React.Component {
 
   render() {
     if (this.state.click < 3) {
-      return <button>Hot Button</button>;
-    } else if (this.state.click < 6) {
+      return <button onClick={this.handleClick}>Hot Button</button>;
+    } else if (this.state.click < 4) {
       return <button class="warmButton" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.click < 9) {
+    } else if (this.state.click < 7) {
       return <button class="heatingButton" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.click < 12) {
+    } else if (this.state.click < 10) {
       return <button class="fireButton" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.click < 15) {
+    } else if (this.state.click < 13) {
       return <button class="nuclearButton" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.click < 18) {
+    } else if (this.state.click < 16) {
       return <button class="meltdownButton" onClick={this.handleClick}>Hot Button</button>;
-    } else if (this.state.click >= 18) {
+    } else if (this.state.click > 15) {
       return <button class="falloutButton" onClick={this.handleClick}>Hot Button</button>;
     }
   }
