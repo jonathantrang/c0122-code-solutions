@@ -1,40 +1,65 @@
 import React from 'react';
-
 class Stopwatch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isPaused: true
+      value: 0,
+      isPlayed: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.currentTime = this.currentTime.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleFaceClick = this.handleFaceClick.bind(this);
   }
 
-  handleClick() {
+  currentTime() {
     this.setState({
-      isPaused: false
+      value: this.state.value + 1
     });
   }
 
-  render() {
-    if (this.state.isPaused) {
-      return (
-        <div class="row">
-          <div class="column-100">
-            <div class="circle"></div>
-            <div class="playButton"></div>
-          </div>
-        </div>
-      )
-    } else if (!this.state.isPaused){
-      return (
-        <div class="row">
-          <div class="column-100">
-            <div class="circle"></div>
-            <div class="playButton"></div>
-          </div>
-        </div>
-      )
+  handleButtonClick() {
+    this.setState({
+      isPlayed: !this.state.isPlayed
+    });
+    if (!this.state.isPlayed) {
+      this.timerID = setInterval(
+      () => this.currentTime(),
+      1000
+    );
+    } else if (this.state.isPlayed) {
+      clearInterval(this.timerID);
     }
+  }
+
+  handleFaceClick() {
+    if (!this.state.isPlayed) {
+      this.setState({
+        value: 0
+      });
+    }
+  }
+
+  getButtonChange() {
+    const { isPlayed } = this.state;
+    if (!this.state.isPlayed) return 'play';
+    if (this.state.isPlayed) return 'pause';
+  }
+
+  render() {
+    const buttonClass = this.getButtonChange();
+    return (
+      <div>
+        <div className="center">
+          <div onClick={this.handleFaceClick} className="circle center">
+            <div className="timer">{this.state.value}</div>
+          </div>
+        </div>
+        <div className="space center">
+          <i onClick={this.handleButtonClick} className={`button fas fa-${buttonClass}`}>
+          </i>
+        </div>
+      </div>
+    );
   }
 }
 
