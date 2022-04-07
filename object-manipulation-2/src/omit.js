@@ -9,25 +9,30 @@
   If object is empty then return an empty object
 3. Pseudocode
   Define a function with parameters source and keys
-  Have a variable that stores the new object containing source parameter not listed in keys parameter
-  Create a loop
-    Set an initial variable at 0
-    Conditional set where if initial variable is less than the string length then runs conditional code block
-      Create an if statmement that checks to see if
-    Increment the initial variable by 1
-  Checks to see if
-
+  Create a storage variable that is an empty object literal
+  Create a loop that checks the key in the source object
+    Assign the result of the key in the source object to the empty storage variable's properties
+  Create a loop that goes through the keys array
+    Have the initial value start at 0
+    Have the loop check to see if the initial value is less that the length of the keys array
+      If it is then check to see if the item in the keys array shows up in the source object
+        If it does then delete the item in the keys array in the new object storage
+    Have the initial value increment by 1
+  Return the new object literal
 4. Trace
 5. Code
 6. Trace
 */
 
 const omit = (source, keys) => {
-  const newObj = {};
+  const newObject = {};
+  for (const key in source) {
+    newObject[key] = source[key];
+  }
   for (let i = 0; i < keys.length; i++) {
-    if (source[keys[i]] === keys[i] in source) {
-      newObj[keys[i]] = source[keys[i]];
+    if (keys[i] in source) {
+      delete newObject[keys[i]];
     }
   }
-  return newObj;
-}
+  return newObject;
+};
