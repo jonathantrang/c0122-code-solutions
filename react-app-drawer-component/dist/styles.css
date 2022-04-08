@@ -20,16 +20,24 @@ h2 {
 }
 
 .menu {
-  z-index: 10;
-  position: fixed;
+  z-index: 1;
+  position: relative;
+}
+
+.background-image {
+  height: 300px;
+  width: 300px;
+  background-image: url("../imgs/worlds-visual.jpeg");
+  background-size: cover;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .8);
   opacity: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 5
 }
